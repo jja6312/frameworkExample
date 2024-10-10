@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans>
+    <bean class="web.model.member.MemberDao" id="memberDao"></bean>
+    <bean class="web.model.member.MemberService" id="memberService"></bean>
+</beans>
