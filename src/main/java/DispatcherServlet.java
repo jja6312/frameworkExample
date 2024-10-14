@@ -16,6 +16,7 @@ import java.util.Map;
 @WebServlet("/main")
 public class DispatcherServlet  extends HttpServlet {
     Map<String, Controller> beans;
+    Map<String, Object> beans2;
 
     @Override
     public void init() throws ServletException {
@@ -24,6 +25,8 @@ public class DispatcherServlet  extends HttpServlet {
             String modelPath = getServletContext().getRealPath("/WEB-INF/beans2.xml");
             XmlBeanFactory factory = new XmlBeanFactory(controllerPath,modelPath);
             beans = factory.getBeans();
+            beans2 = factory.getBeans2();
+            System.out.println(beans2);
         }catch(Exception e){
             e.printStackTrace();
         }

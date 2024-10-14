@@ -14,4 +14,8 @@ public class MemberService {
         return memberDao.login(id,pw);
 
     }
+
+    public void deleteMember(String id) throws MyException {
+        memberDao.deleteMember(id);
+    }
 }

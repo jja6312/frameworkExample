@@ -2,4 +2,6 @@
 <beans>
     <bean class="web.model.member.MemberDao" id="memberDao"></bean>
     <bean class="web.model.member.MemberService" id="memberService"></bean>
+    <bean class="web.model.board.BoardDao" id="boardDao"></bean>
+    <bean class="web.model.board.BoardService" id="boardService"></bean>
 </beans>

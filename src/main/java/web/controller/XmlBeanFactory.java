@@ -12,7 +12,7 @@ import java.util.Map;
 
 
 public class XmlBeanFactory {
-    Map<String, Controller> beans = new HashMap<>();
+    private Map<String, Controller> beans = new HashMap<>();
     private static Map<String, Object> beans2 = new HashMap<>();
 
 
